@@ -1,0 +1,18 @@
+com/coden/nplayerplus/utils/CryptoUtil.smali:13:.field dcipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:15:.field ecipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:66:    invoke-static {p2}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:70:    iput-object v0, p0, Lcom/coden/nplayerplus/utils/CryptoUtil;->ecipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:73:    invoke-static {p2}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:77:    iput-object v0, p0, Lcom/coden/nplayerplus/utils/CryptoUtil;->dcipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:80:    iget-object v0, p0, Lcom/coden/nplayerplus/utils/CryptoUtil;->ecipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:84:    invoke-virtual {v0, v1, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+com/coden/nplayerplus/utils/CryptoUtil.smali:87:    iget-object v0, p0, Lcom/coden/nplayerplus/utils/CryptoUtil;->dcipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:91:    invoke-virtual {v0, v1, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+com/coden/nplayerplus/utils/CryptoUtil.smali:267:    iget-object v2, p0, Lcom/coden/nplayerplus/utils/CryptoUtil;->dcipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:269:    invoke-virtual {v2, v0}, Ljavax/crypto/Cipher;->doFinal([B)[B
+com/coden/nplayerplus/utils/CryptoUtil.smali:403:    iget-object v2, p0, Lcom/coden/nplayerplus/utils/CryptoUtil;->ecipher:Ljavax/crypto/Cipher;
+com/coden/nplayerplus/utils/CryptoUtil.smali:405:    invoke-virtual {v2, v1}, Ljavax/crypto/Cipher;->doFinal([B)[B
+com/teruten/tms4encrypt/TMS4Encrypt.smali:69:.field public static TMS4_CIPHER_ID_AES:I
+com/teruten/tms4encrypt/TMS4Encrypt.smali:71:.field public static TMS4_CIPHER_ID_ARIA:I
+com/teruten/tms4encrypt/TMS4Encrypt.smali:263:    sput v4, Lcom/teruten/tms4encrypt/TMS4Encrypt;->TMS4_CIPHER_ID_AES:I
+com/teruten/tms4encrypt/TMS4Encrypt.smali:266:    sput v5, Lcom/teruten/tms4encrypt/TMS4Encrypt;->TMS4_CIPHER_ID_ARIA:I
